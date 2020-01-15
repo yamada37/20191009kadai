@@ -1,8 +1,22 @@
 <html>
-<script>
-fetch('https://4000-e64c59f4-882f-46b4-a55b-9c3a19fde66d.ws-ap01.gitpod.io/')
-    .then(res => res.text())
-    .then(data => alert(data))
-</script>
+<head>
+<style>
+    button {
+        font-size: 50px;
+    }
+</style>
+</head>
+<body>
+    <button id="button">おみくじをひく</button>
+    <script>
+        const button = document.getElementById('button')
+        button.addEventListener('click', () => {
+            fetch('https://3000-e64c59f4-882f-46b4-a55b-9c3a19fde66d.ws-ap01.gitpod.io/kadai-8/')
+                .then(res => res.text())
+                .then(data => alert(data))
+        })
+    </script>
+</body>
 </html>
+
 
